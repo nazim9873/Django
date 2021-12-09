@@ -1,1 +1,1 @@
-web:waitress-serve --port = $PORT AedificoCRM.wsgi:application
+web:waitress-serve --port=$PORT AedificoCRM.wsgi:application
