@@ -24,7 +24,7 @@ SECRET_KEY = "django-insecure-)t*yc1^!76f_#ht)ka(e4_9b6vbgs9k5z@yotcfjfn!b1$g(n-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["crm4aedificogroup.herokuapp.com", "localhost"]
+ALLOWED_HOSTS = ["aedifico-crm.herokuapp.com", "localhost"]
 
 # Application definition
 
@@ -115,7 +115,12 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+if DEBUG:
+    STATICFILES_DIRS = [
+        os.path.join(BASE_DIR, 'static')
+    ]
+else:
+    STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
 
 # Default primary key field type
