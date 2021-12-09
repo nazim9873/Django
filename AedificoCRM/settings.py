@@ -125,6 +125,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 print(BASE_DIR)
 # managing media
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+heroku
+login
 MEDIA_URL = "/media/"
 
 DATE_INPUT_FORMATS = ['%d/%m/%Y']
