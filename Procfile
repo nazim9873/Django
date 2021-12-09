@@ -1,1 +1,1 @@
-web : gunicorn AedificoCRM.wsgi --log-file -
+web:gunicorn AedificoCRM.wsgi --log-file -
