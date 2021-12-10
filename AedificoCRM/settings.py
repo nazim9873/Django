@@ -27,7 +27,7 @@ SECRET_KEY = "django-insecure-)t*yc1^!76f_#ht)ka(e4_9b6vbgs9k5z@yotcfjfn!b1$g(n-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["crm-aedificotech.herokuapp.com", "localhost", '127.0.0.1']
+ALLOWED_HOSTS = ["crm-aedifico.herokuapp.com", "localhost", '127.0.0.1']
 
 # Application definition
 
@@ -121,7 +121,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, 'assets')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
