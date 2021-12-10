@@ -27,7 +27,7 @@ SECRET_KEY = "django-insecure-)t*yc1^!76f_#ht)ka(e4_9b6vbgs9k5z@yotcfjfn!b1$g(n-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["crm-aedifico.herokuapp.com", "localhost"]
+ALLOWED_HOSTS = ["crm-aedificotech.herokuapp.com", "localhost"]
 
 # Application definition
 
