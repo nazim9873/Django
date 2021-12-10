@@ -1,1 +1,1 @@
-web:gunicorn AedificoCRM.wsgi
+web:waitress-serve --port=$PORT AedificoCRM.wsgi:application
