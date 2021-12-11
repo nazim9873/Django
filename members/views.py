@@ -12,7 +12,7 @@ def login_user(request):
         user = authenticate(request, username=username, password=password)
         if user is not None:
             login(request, user)
-            return redirect('/')
+            return redirect('/crm')
         else:
             messages.success(request, ("Username or password is incorrect"))
             return render(request, 'members/login.html')
@@ -24,7 +24,7 @@ def login_user(request):
 def logout_user(request):
     logout(request)
     messages.success(request, ("Logged out successfully"))
-    return redirect('/members/login_user')
+    return redirect('/')
 
 
 def register_user(request):
@@ -37,7 +37,7 @@ def register_user(request):
             user = authenticate(username=username, password=password)
             login(request, user)
             messages.success(request, ("Username or password is incorrect"))
-            return redirect('/')
+            return redirect('/crm')
     else:
         form = RegisterUserForm()
     return render(request, 'members/register.html', {'form': form})

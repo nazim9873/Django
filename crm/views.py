@@ -83,7 +83,7 @@ def registration(request):
         print(r.errors)
     else:
         r = RegistrationForm()
-        return render(request, 'crm/registration.html', {"r_form": r})
+        return render(request,'crm/registration.html', {"r_form": r})
 
 
 def services(request):
